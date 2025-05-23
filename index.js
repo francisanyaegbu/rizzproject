@@ -60,15 +60,15 @@ function darkMode() {
         bodyDark.classList.remove("dark");
         document.getElementById("theme").innerHTML = `<i class="icofont-sun"></i>`;
         document.getElementById("menu-bar-images").innerHTML =
-            `<span><img src="images/logo-sm.png" alt=""></span>
-            <img src="images/logo-dark.png" alt="">`;
+            `<span><img src="logo-sm.png" alt=""></span>
+            <img src="logo-dark.png" alt="">`;
         localStorage.setItem("theme", "light"); 
     } else {
         bodyDark.classList.add("dark");
         document.getElementById("theme").innerHTML = `<i class="ri-moon-fill"></i>`;
         document.getElementById("menu-bar-images").innerHTML =
-            `<span><img src="images/logo-sm.png" alt=""></span>
-            <img src="images/logo-light.png" alt="">`;
+            `<span><img src="logo-sm.png" alt=""></span>
+            <img src="logo-light.png" alt="">`;
         localStorage.setItem("theme", "dark"); 
     }
 }
@@ -79,14 +79,14 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.classList.add("dark");
         document.getElementById("theme").innerHTML = `<i class="ri-moon-fill"></i>`;
         document.getElementById("menu-bar-images").innerHTML =
-            `<span><img src="images/logo-sm.png" alt=""></span>
-            <img src="images/logo-light.png" alt="">`;
+            `<span><img src="logo-sm.png" alt=""></span>
+            <img src="logo-light.png" alt="">`;
     } else {
         document.body.classList.remove("dark");
         document.getElementById("theme").innerHTML = `<i class="icofont-sun"></i>`;
         document.getElementById("menu-bar-images").innerHTML =
-            `<span><img src="images/logo-sm.png" alt=""></span>
-            <img src="images/logo-dark.png" alt="">`;
+            `<span><img src="logo-sm.png" alt=""></span>
+            <img src="logo-dark.png" alt="">`;
     }
 });
 function checkAll() {
