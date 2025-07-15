@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="images/logo-sm.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />    
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/icofont/icofont.min.css">
+    <link rel="stylesheet" href="icofont/icofont.css">
+    <title>Rizz</title>
+</head>
+<body>
+    <div class="add-new">
+        <form>
+            <p>User Form</p>
+            <label for="customer_name">Full Name</label>
+            <input type="text" name="customer_name" autocomplete="additional-name">
+            <label for="email">Email address</label>
+            <input type="email" name="email" autocomplete="email">
+            <label for="status">Status</label>
+            <select name="status" id="status">
+                <option value="VIP">VIP</option>
+                <option value="Referral">Referral</option>
+                <option value="Loyal">Loyal</option>
+                <option value="Inactive">Inactive</option>
+                <option value="Reorder">Re-order</option>
+                <option value="Repeat">Repeat</option>
+                <option value="New">New</option>
+            </select>
+            <label for="order">Order</label>
+            <input type="number" name="order">
+            <label for="spent">Spent</label>
+            <input type="number" name="spent" placeholder="$">
+            <button type="button" onclick="addNewUser()" class="add">Add</button>
+            <button type="button" id="cancel-add-user">Cancel</button>
+        </form>
+    </div>
+
+
+
+
+
+
+        <div class="menu-bar-initial-display" onmouseenter="showMenuBar()">
+            <div id="menu-bar-initial-image">
+                <img src="images/logo-sm.png" alt="">
+            </div>
+            <div id="menu-bar-initial-content1">
+                <i class="iconoir-home-simple"></i>
+                <i class="iconoir-view-grid"></i>
+            </div>
+            <div id="menu-bar-initial-content2">
+                <i class="iconoir-compact-disc"></i>
+                <i class="iconoir-peace-hand"></i>
+                <i class="iconoir-journal-page"></i>
+                <i class="iconoir-candlestick-chart"></i>
+                <i class="iconoir-table-rows"></i>
+                <i class="iconoir-trophy"></i>
+                <i class="iconoir-navigator-alt"></i>
+                <i class="iconoir-send-mail"></i>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    <!-- this is the menu-bar -->
+     
+    <div class="menu-bar-display close" onmouseleave="hideMenuBar()">
+        <div id="menu-bar-images">
+            <span><img src="images/logo-sm.png" alt=""></span>
+            <img src="/images/logo-dark.png" alt="">
+        </div>
+        <div id="menu-bar-header">
+            <p>MAIN MENU</p>
+        </div>
+        <div id="menu-bar-content">
+            <p class="collapsible"><i class="iconoir-home-simple"></i>Dashboards</p>
+            <p><i class="iconoir-view-grid"></i></i>Applications</p>
+        </div>
+        <div id="menu-bar-header">
+            <p>COMPONENTS</p>
+        </div>
+        <div id="menu-bar-content">
+            <p><i class="iconoir-compact-disc"></i>UI Elements</p>
+            <p><i class="iconoir-peace-hand"></i>Advanced UI</p>
+            <p><i class="iconoir-journal-page"></i>Forms</p>
+            <p><i class="iconoir-candlestick-chart"></i>Charts</p>
+            <p><i class="iconoir-table-rows"></i>Tables</p>
+            <p><i class="iconoir-trophy"></i>Icons</p>
+            <p><i class="iconoir-navigator-alt"></i>Maps</p>
+            <p><i class="iconoir-send-mail"></i>Email Templates</p>
+        </div>
+        <div id="menu-bar-header">
+            <p>CRAFTED</p>
+        </div>
+        <div id="menu-bar-content">
+            <p><i class="iconoir-page-star"></i>Pages</p>
+            <p><i class="iconoir-fingerprint-lock-circle"></i>Authentication</p>
+        </div>
+        <div id="subscription">
+            <div><i class="iconoir-peace-hand"></i></div>
+            <h4>Francis Themes</h4>
+            <p>Rizz is a high quality web application.</p>
+            <button type="button">Upgrade your plan</button>
+        </div>
+    </div>
+
+    <!-- full screen display -->
+    <div id="main-display">
+
+        <!--  full header display -->
+        <div id="header-display">
+
+            <!-- this is the menu bar button that displays the menu bar onclick -->
+            <!-- right-header-display -->
+            <div id="header">
+                <div id="menu-bar" onclick="toggleSideBar()">
+                    <i class="iconoir-menu-scale"></i>
+                </div>
+                <h1>Good Morning, Francis!</h1>
+            </div>
+
+            <!-- header-navigation -->
+            <div id="header-nav">
+
+                <!-- the search input -->
+                <div id="search-input">
+                    <i class="iconoir-search"></i>
+                    <input type="text" placeholder="Search here..." />
+                </div>
+
+                <!-- the language input -->
+                <div id="dropdown" type="button" onclick="showLanguageOptions()">
+                    <button><img src="images/usa1.jpg" alt=""></button>
+                    <div id="dropdown-content" class="hide">
+                        <p><img src="images/usa1.jpg" alt="">English</p>
+                        <p><img src="images/spain.png" alt="">Spanish</p>
+                        <p><img src="images/germany2.jpg" alt="">German</p>
+                        <p><img src="images/france.png" alt="">French</p>
+                    </div>
+                </div>
+
+                <!-- indicates light or dark mode -->
+                <div id="theme" onclick="darkMode()">
+                    <button type="button"><i class="icofont-sun"></i></button>
+                </div> 
+
+                <!-- notification icon here -->
+                 <div id="notification">
+                    <i class="icofont-bell-alt"></i>
+                 </div>
+
+                <!-- profile icon here -->
+                <div id="profile">
+                    <img src="images/me.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- this is the body part of the page -->
+        <div id="body-display">
+            
+            <!-- this is the inner of the body part of the page -->
+            <div id="body-display-inner">
+
+                <!-- this is the header of the inner of the body part of the page -->
+                <div id="body-display-inner-header">
+                    <h1>Customers</h1>
+
+                    <!-- this is the filter button -->
+                    <div id="filter-dropdown" onclick="filterDisplay()">
+                        <button type="button">
+                            <i class="iconoir-filter-alt"></i>Filter
+                        </button>
+
+                        <!-- this is the content of the filter -->
+                        <div id="filter-dropdown-content" class="hide">
+
+                            <!-- custom checkbox for filter content -->
+                            
+                            <input type="checkbox" name="all" id="all" checked="cheked">
+                            <span id="check-mark"></span>
+                            <label for="all">All
+                            </label><br>
+
+                            <input type="checkbox" name="new" id="new" checked="checked">
+                            <span id="check-mark"></span>
+                            <label for="new">New
+                            </label><br>
+                            
+                            <input type="checkbox" name="vip" id="vip" checked="cheked">
+                            <span id="check-mark"></span>
+                            <label for="vip">VIP
+                            </label><br>
+
+                            <input type="checkbox" name="repaeat" id="repeat" checked="cheked">
+                            <span id="check-mark"></span>
+                             <label for="repeat">Repeat
+                            </label><br>
+
+                            <input type="checkbox" name="referral" id="referral" checked="cheked">
+                            <span id="check-mark"></span>
+                            <label for="referral">Referral
+                            </label><br>
+
+                            <input type="checkbox" name="inactive" id="inactive" checked="cheked">
+                            <span id="check-mark"></span>
+                            <label for="inactive">Inactive
+                            </label><br>
+
+                            <input type="checkbox" name="loyal" id="loyal" checked="cheked">
+                            <span id="check-mark"></span>
+                            <label for="loyal">Loyal
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- this is the add user button -->
+                    <div id="add-user">
+                        <button type="button" onclick="addUser()">
+                            <i class="iconoir-plus"></i>Add User
+                        </button>
+                    </div>
+                </div>
+
+                <!-- this houses the entries and entry search divs -->
+                <div id="entry">
+
+                    <!-- this is the entry input -->
+                    <div id="entry-input">
+                        <select name="entries" id="entries">
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="10">15</option>
+                            <option value="15">20</option>
+                            <option value="20">25</option>
+                        </select>
+                        <label for="entries">entries per page</label>
+                    </div>
+
+                    <!-- this is the entry search input -->
+                    <div id="entry-search-input">
+                        <input type="search" placeholder="Search..." />
+                    </div>
+                </div>
+
+                <!-- this is the customer details section -->
+                <div id="details">
+                    <div id="details-content">
+                        <table>
+                            <tr>
+                                <th>
+                                    <label style>
+                                        <input type="checkbox" id="main-checkbox" onclick="checkAll()">
+                                        <span id="check-mark"></span>
+                                    </label>
+                                </th>
+                                <th>Customers</th>
+                                <th>Email</th>
+                                <th>Status</th>
+                                <th>Order</th>
+                                <th>Spent</th>
+                                <th>Action</th>
+                            </tr>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <div class="entry-pagination">
+                        <p>Showing 1 to 15 of 15 entries</p>
+                        <div class="pagination">
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">></a>
+                        </div>
+                    </div>    
+            </div>
+        </div>
+        <div id="footer">
+            <p><i class="ri-copyright-line"></i>2025 Rizz</p>
+            <p>Created with <i class="ri-heart-line"></i> by FRANCIS</p>
+        </div>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
