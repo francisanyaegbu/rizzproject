@@ -1,0 +1,889 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* this is the full display styling */
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-color: #f7f9fb;
+}
+
+#main-display {
+    font-family: "Be Vietnam Pro", sans-serif;
+    width: 100%;
+}
+
+.menu-bar-initial-display {
+    position: sticky;
+    top: 0;
+    font-family: "Be Vietnam Pro", sans-serif;
+    background-color: #fff;
+    width: 6%;
+    height: 100vh;
+    padding: 30px 15px;
+    overflow-y: scroll;
+    transition: ease-in-out 0.3s;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#menu-bar-initial-image {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+#menu-bar-initial-image img {
+    width: 45px;
+    padding-bottom: 30px;
+    padding-right: 5px;
+}
+
+#menu-bar-initial-content1 i {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    color: #9da6ba;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+#menu-bar-initial-content1 i:last-child {
+    margin-bottom: 50px;
+}
+
+#menu-bar-initial-content2 i {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    color: #9da6ba;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+/* this is for the menu bar */
+
+.menu-bar-display {
+    position: sticky;
+    top: 0;
+    font-family: "Be Vietnam Pro", sans-serif;
+    background-color: #fff;
+    width: 27%;
+    height: 100vh;
+    padding-bottom: 30px;
+    overflow-y: scroll;
+    transition: ease 0.3s;
+}
+
+.close {
+    width: 0px;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #fff; 
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    display: none;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    display: block;
+    background: #e9ecf3; 
+}
+
+#menu-bar-images {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 0 0 85px;
+    z-index: 99;
+    width: 100%;
+}
+
+#menu-bar-images img {
+    width: 50px;
+    padding-bottom: 30px;
+    padding-right: 5px;
+}
+
+#menu-bar-images span img {
+    width: 45px;
+}
+
+#menu-bar-header {
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+#menu-bar-header p {
+    font-size: 11.2px;
+    font-weight: 400;
+    color: #9da6ba;
+    letter-spacing: 1px;
+}
+
+#menu-bar-content {
+    padding: 25px 0px 0px 33px;
+    margin-inline: auto;
+}
+
+#menu-bar-content p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+#menu-bar-content p:hover {
+    color: #34ca6b;
+    transition: 0.1s;
+    font-weight: 600;
+}
+
+#menu-bar-content p:active {
+    color: #34ca6b;
+}
+
+#menu-bar-content p i {
+    font-size: 20px;
+    text-align: center;
+    color: #9da6ba;
+    padding-right: 15px;
+}
+
+#subscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 5px;
+    background-color: #e8f9ef;
+    margin-inline: auto;
+    margin-top: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#subscription div {
+    position: absolute;
+    transform: translateY(-95px);
+    background-color: #e8f9ef;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+#subscription div i {
+    background-color: #fff;
+    color: #22c55e;
+    font-size: x-large;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#subscription h4 {
+    font-size: 17px;
+    margin-top: 60px;
+}
+
+#subscription p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #9da6ba;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+}
+
+#subscription button {
+    width: 70%;
+    border: none;
+    border-radius: 30px;
+    padding: 12px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    color: #34ca6b;
+    font-weight: medium;
+    font-size: small;
+    box-shadow: 0px 2px 5px rgba(67, 67, 67, 0.1);
+}
+
+/* this is the styling for the full header display */
+
+#header-display {
+    background-color: #f7f9fb;
+    position: sticky;
+    top: 0;
+    margin-inline: auto;
+    display: flex;
+    padding-top: 38px;
+    padding-bottom: 35px;
+    padding-right: 20px;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 99;
+    transition: 0.5s;
+}
+
+.header-display-s {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* this styles the side menu */
+
+/* the menu button */
+
+#menu-bar {
+    width: 3em;
+    height: 3em;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-top: -5px;
+    margin-left: 20px;
+    margin-right: 25px;
+    padding: 13px;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px #f7f9fb;
+}
+
+#menu-bar i {
+    font-size: 20px;
+    color: #9da6ba;
+}
+
+/* this styling is for the header */
+
+#header {
+    display: flex;
+}
+
+#header h1 {
+    color: #2b2d3b;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* this is the header nav */
+
+#header-nav {
+    display: flex;
+}
+
+/* this styling is for the main search input  */
+
+#search-input {
+    background-color: #fff;
+    display: flex;
+    color: #9da6ba;
+    margin-right: 15px;
+    width: 305px;
+    border-radius: 24px;
+    box-shadow: 0px 1px 2px #f7f5f5;
+}
+
+#search-input input {
+    width: 285px;
+    border: none;
+    display: block;
+    outline: none;
+    border-radius: 24px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+#search-input i {
+    font-size: 25px;
+    text-align: center;
+    color: #9da6ba;
+    padding: 11px;
+    cursor: pointer;
+}
+
+#search-input input::placeholder {
+    font-weight: 500;
+    color: #9da6ba;
+}
+
+/* this dropdown styling is for selection of language of choice */
+
+#dropdown {
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    background-color: #fff;
+    padding: 10px;
+    margin-right: 15px;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px #f8f9f9;
+}
+
+/* this button style targets all buttons but the styling is for the dropdown, 
+other buttons are given their own style */
+
+button {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* the dropdown image and content are styled below  */
+
+#dropdown img {
+    display: inline;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+#dropdown-content {
+    width: 150px;
+    background-color: #fff;
+    border: 1px solid #9da6ba;
+    border-radius: 10px;
+    position: fixed;
+    padding: 16px 0px 0px 25px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#dropdown-content p {
+    display: flex;
+    font-size: small;
+    letter-spacing: 0.3px;
+    text-align: justify;
+}
+
+#dropdown-content img {
+    display: block;
+    width: 1.8em;
+    height: 1.2em;
+    border-radius: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.hide {
+    display: none;
+}
+/* dropdown styling ends here */
+
+/* theme styling starts here */
+
+#theme {
+    background-color: #fff;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    padding: 14px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0px 1px 2px #f7f9fb;
+}
+
+#theme i {
+    font-size: 20px;
+    text-align: center;
+    color: #9da6ba;
+}
+
+#notification {
+    background-color: #fff;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    padding: 14px;
+    margin-right: 15px;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px #f9fafb;
+}
+
+#notification i {
+    font-size: 20px;
+    text-align: center;
+    color: #9da6ba;
+}
+
+#profile {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#profile img {
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+}
+
+/* this is the full body display styling */
+
+#body-display {
+    width: 100%;
+    background-color: #f7f9fb;
+    border: none;
+    padding-inline: 20px;
+    overflow: auto;
+    box-shadow: 0px 1px 2px #eff4f1;
+}
+
+#body-display-inner {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 25px 22px 20px 22px;
+}
+
+#body-display-inner-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#body-display-inner-header h1 {
+    width: 80%;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: #2b2d3b;
+}
+
+/* this dropdown is for the filter button which has a custom styled checkbox */
+
+#filter-dropdown button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    border: 0;
+    border-radius: 7px;
+    background-color: #e8f9ef;
+    font-size: small;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: #22c55e;
+    overflow: hidden;
+    padding: 10px;
+    margin-right: 12px;
+    box-shadow: 0px 1px 2px #eff4f1;
+}
+
+#filter-dropdown button i {
+    padding-right: 7px;
+}
+
+/* this is the content of the dropdown of the filter button */
+
+#filter-dropdown-content {
+    width: 150px;
+    background-color: #fff;
+    border: 1px solid #9da6ba;
+    border-radius: 10px;
+    position: fixed;
+    padding: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-inline: auto;
+}
+
+/* the styling of the custom checkbox starts here */
+
+input {
+    display: none;
+}
+
+#check-mark {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #9da6ba;
+    border-radius: 2px;
+    background-color: #fff;
+    margin-right: 7px;
+}
+
+#check-mark::after {
+    content: " ";
+    display: none;
+    width: 3px;
+    height: 6px;
+    margin-left: 5px;
+    margin-top: 2px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+input:checked ~ #check-mark {
+    background-color: #22c55e;
+}
+
+input:checked ~ #check-mark::after {
+    display: block;
+}
+
+#filter-dropdown-content label {
+    font-size: 13px;
+    color: #656d9a;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+}
+
+/* it ends here */
+
+/* this is the add-user button styling */
+
+#add-user button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #22c55e;
+    font-size: small;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: #fff;
+    overflow: hidden;
+    margin-inline: auto;
+    padding: 8px;
+    box-shadow: 0px 1px 2px #eff4f1;
+    text-decoration: none;
+}
+
+#add-user button:hover {
+    background-color: #24bd5c;
+    transition: 0.5s;
+}
+
+#add-user button i {
+    font-size: 20px;
+    padding-right: 7px;
+}
+
+/* the styling ends here */
+
+/* this is the styling for entry input and entry search input */
+
+#entry {
+    width: 99%;
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+/* the entry input */
+
+#entry select {
+    width: 50px;
+    height: 28px;
+    border: solid #f3f5f9;
+    border-width: 1px;
+    border-radius: 3px;
+    margin-left: 15px;
+    padding: 5px;
+    outline: none;
+}
+
+#entry-input label {
+    font-size: smaller;
+    font-weight: 400;
+    color: #9da6ba;
+}
+
+/* the entry search input */
+
+#entry-search-input input {
+    width: 180px;
+    display: inline;
+    padding: 8px;
+    border: 1px solid #f3f5f9;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+#entry-search-input input::placeholder {
+    font-weight: 400;
+    color: #757575;
+}
+
+#details {
+    display: block;
+    padding-top: 10px;
+    width: 100%;
+}
+
+#details-content {
+    background-color: #f7f9fb;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    height: fit-content;
+    border-collapse: collapse;
+}
+ 
+th {
+    text-align: justify;
+    padding: 10px 0 10px 15px;
+    font-size: small;
+    font-weight: 500;
+}
+
+td {
+    align-items: center;
+    font-size: small;
+    font-weight: 400;
+    padding: 20px 0 20px 15px;
+    background-color: #fff;
+    border-bottom: 1px dashed #e2e7f1;
+}
+
+td i {
+    color: #9fa4c5;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.entry-pagination {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.entry-pagination p {
+    font-size: small;
+}
+
+.pagination {
+    display: inline-flex;
+    position: relative;
+    border: 1px solid #eff2f7;
+    border-radius: 8px;
+}
+
+.pagination a {
+    position: relative;
+    display: block;
+    padding: 8px 13px;
+    font-size: .812rem;
+    color: var(--bs-body-color);
+    background-color: var(--bs-card-bg);
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    text-decoration: none;
+    border: 1px solid #eff2f7;
+}
+
+.pagination a:first-child {
+    background-color: #22c55e;
+    color: white;
+    border: 1px solid #22c55e;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    cursor: default;
+}
+
+.pagination a:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.pagination a:hover {
+    background-color: #f7f9fb;
+    color: #22c55e;
+    transition: all 0.1s;
+}
+
+.pagination a:first-child:hover {
+    background-color: #22c55e;
+    color: white;   
+}
+
+#footer {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    margin-inline: auto;
+    padding: 20px;
+    margin-top: 30px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+#footer p {
+    font-size: small;
+    color: #9da6ba;
+}
+
+.ri-heart-line {
+    color: #ef4d56;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.add-new {
+    position: fixed;
+    top: 0;
+    right: -110%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.201);
+    background-blend-mode: overlay;
+    box-shadow: -2px 0 16px rgba(0,0,0,0.12);
+    z-index: 1000;
+    transition: right 0.5s cubic-bezier(.4,0,.2,1);
+    overflow-y: auto;
+}
+.add-new.slidein {
+    right: 0; 
+}
+.add-new.slideout {
+    right: -110%; 
+}
+
+.add-new form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100vh;
+    box-shadow: -2px 0 16px rgba(0,0,0,0.12);
+    background-color: #fff;
+    font-family: "Be Vietnam Pro", sans-serif;
+    display: inline-block;
+    padding: 50px;
+    margin-inline: auto;
+}
+
+.add-new p {
+    font-size: large;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.add-new label {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #656d9a;
+}
+
+.add-new input {
+    display: block;
+    outline: none;
+    border: 1px solid #9da6ba;
+    border-radius: 5px;
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    margin-bottom: 12px;
+    margin-top: 6px;
+}
+
+.add-new input::placeholder {
+    font-size: 10px;
+}
+
+.add-new select {
+    display: block;
+    outline: none;
+    border: 1px solid #9da6ba;
+    border-radius: 5px;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #656d9a;
+}
+
+.add-new .add {
+    width: 25%;
+    padding: 8px; 
+    background-color: #22c55e; 
+    color: #fff; 
+    border: none; 
+    box-shadow: 0 1px 2px 0 rgba(34, 197, 94, .35);
+    cursor: pointer;
+}
+
+.add-new form button {
+    align-items: right;
+    background-color: #f36178;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 5px;
+    width: 25%;
+    box-shadow: 0 1px 2px 0 rgba(34, 197, 94, .35);
+    cursor: pointer;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.status-badge.vip {
+    background-color: #fdedee;
+    color: #f36178;
+}
+.status-badge.referral {
+    background-color: #e8f9f7;
+    color: #35c8b1;
+}
+.status-badge.loyal {
+    background-color: #e8f9f7;
+    color: #35c8b1;
+}
+.status-badge.inactive {
+    background-color: #f4f5f9;
+    color: #ada8d4;
+}
+.status-badge.reorder {
+    background-color: #e8f9f7;
+    color: #35c8b1;
+}
+.status-badge.repeat {
+    background-color: #e6f0ff;
+    color: #2286fe;
+}
+.status-badge.new {
+    background-color: #e8f9f7;
+    color: #35c8b1;
+}
