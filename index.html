@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dark-mode.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="logo-sm.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="images/logo-sm.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -14,7 +14,8 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"
     />
-    <link rel="stylesheet" href="icofont.min.css">
+    <link rel="stylesheet" href="/icofont/icofont.min.css">
+    <link rel="stylesheet" href="icofont/icofont.css">
     <title>Rizz</title>
 </head>
 <body>
@@ -22,9 +23,9 @@
         <form>
             <p>User Form</p>
             <label for="customer_name">Full Name</label>
-            <input type="text" name="customer_name">
+            <input type="text" name="customer_name" autocomplete="additional-name">
             <label for="email">Email address</label>
-            <input type="email" name="email">
+            <input type="email" name="email" autocomplete="email">
             <label for="status">Status</label>
             <select name="status" id="status">
                 <option value="VIP">VIP</option>
@@ -43,12 +44,44 @@
             <button type="button" id="cancel-add-user">Cancel</button>
         </form>
     </div>
+
+
+
+
+
+
+        <div class="menu-bar-initial-display" onmouseenter="showMenuBar()">
+            <div id="menu-bar-initial-image">
+                <img src="images/logo-sm.png" alt="">
+            </div>
+            <div id="menu-bar-initial-content1">
+                <i class="iconoir-home-simple"></i>
+                <i class="iconoir-view-grid"></i>
+            </div>
+            <div id="menu-bar-initial-content2">
+                <i class="iconoir-compact-disc"></i>
+                <i class="iconoir-peace-hand"></i>
+                <i class="iconoir-journal-page"></i>
+                <i class="iconoir-candlestick-chart"></i>
+                <i class="iconoir-table-rows"></i>
+                <i class="iconoir-trophy"></i>
+                <i class="iconoir-navigator-alt"></i>
+                <i class="iconoir-send-mail"></i>
+            </div>
+        </div>
+
+
+
+
+
+
+
     <!-- this is the menu-bar -->
      
-    <div class="menu-bar-display close">
+    <div class="menu-bar-display close" onmouseleave="hideMenuBar()">
         <div id="menu-bar-images">
-            <span><img src="logo-sm.png" alt=""></span>
-            <img src="logo-dark.png" alt="">
+            <span><img src="images/logo-sm.png" alt=""></span>
+            <img src="/images/logo-dark.png" alt="">
         </div>
         <div id="menu-bar-header">
             <p>MAIN MENU</p>
@@ -111,12 +144,12 @@
 
                 <!-- the language input -->
                 <div id="dropdown" type="button" onclick="showLanguageOptions()">
-                    <button><img src="usa1.jpg" alt=""></button>
+                    <button><img src="images/usa1.jpg" alt=""></button>
                     <div id="dropdown-content" class="hide">
-                        <p><img src="usa1.jpg" alt="">English</p>
-                        <p><img src="spain.png" alt="">Spanish</p>
-                        <p><img src="germany2.jpg" alt="">German</p>
-                        <p><img src="france.png" alt="">French</p>
+                        <p><img src="images/usa1.jpg" alt="">English</p>
+                        <p><img src="images/spain.png" alt="">Spanish</p>
+                        <p><img src="images/germany2.jpg" alt="">German</p>
+                        <p><img src="images/france.png" alt="">French</p>
                     </div>
                 </div>
 
@@ -132,7 +165,7 @@
 
                 <!-- profile icon here -->
                 <div id="profile">
-                    <img src="me.jpg" alt="">
+                    <img src="images/me.jpg" alt="">
                 </div>
 
             </div>
